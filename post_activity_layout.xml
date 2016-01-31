@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/svPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/ivDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_launcher"/>
+            <TextView
+                android:id="@+id/tvTitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ivDetail"
+                android:text="Title:"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/etTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleDetail"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:hint="Enter Title"/>
+            <TextView
+                android:id="@+id/tvPriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etTitleDetail"
+                android:text="Price:"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/etPriceDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPriceDetail"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etPriceDetail"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRegionDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Region"/>
+            <Spinner
+                android:id="@+id/spRegionDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layoutRegion"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCategoryDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Category"/>
+            <Spinner
+                android:id="@+id/spCategoryDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPhoneDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/layoutCategory"
+                android:text="Phone:"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/etPhoneDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPhoneDetail"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:hint="Enter Phone"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/tvPasswordDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etPhoneDetail"
+                android:text="Password:"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/etPasswordDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPasswordDetail"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"/>
+            <TextView
+                android:id="@+id/tvDescDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etPasswordDetail"
+                android:text="Password:"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/etDescDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescDetail"
+                android:singleLine="false"
+                android:textSize="15dp"
+                android:hint="Enter Description"
+                android:inputType="textCapSentences"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etDescDetail"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/selctor_detailbutton_submit"/>
+            
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

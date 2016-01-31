@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:background="@drawable/search_bg"
+        android:textColor="@android:color/black"
+        android:text="Search Title"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:layout_margin="15dp"
+        android:hint="Search Title"/>
+    <TextView
+        android:id="@+id/tvSearchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/etSearch"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:text="Category"
+        android:textSize="15dp" />
+    
+    <Spinner
+        android:id="@+id/spSearchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvSearchCategory">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tvSearchRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/spSearchCategory"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:text="Region"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/spSearchRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvSearchRegion">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spSearchRegion"
+        android:layout_marginTop="50dp"
+        android:text="Find"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/selctor_detailbutton_submit"/>
+
+
+</RelativeLayout>
